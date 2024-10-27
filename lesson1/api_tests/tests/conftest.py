@@ -1,6 +1,7 @@
 import pytest
 from lesson1.api_tests.utils.api_client import client
 
+
 @pytest.fixture(scope="module")
 def get_case_id():
     response = client.make_request(
@@ -13,7 +14,7 @@ def get_case_id():
                 "step 1"
             ],
             "expected_result": "test expected result",
-            "priority": "высокий"
+            "priority": "Высокий"
 
         }
     )
